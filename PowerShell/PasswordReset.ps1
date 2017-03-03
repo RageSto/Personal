@@ -21,10 +21,10 @@ $outputFile = "C:\Password Reset\ADResetOutput.csv"
 Add-Content $outputFile "Status,SamAccountName,CanonicalName,Staff#,Mail"
 
 # OU's to exclude from AD search
-$exclusion1 = "*OU=Genetec All-In-Ones,OU=Technology,OU=Staff,OU=User Accounts,DC=rqs,DC=c2"
-$exclusion2 = "*OU=Google Plus,OU=Technology,OU=Staff,OU=User Accounts,DC=rqs,DC=c2"
-$exclusion3 = "*OU=FIM,OU=Staff,OU=User Accounts,DC=rqs,DC=c2"
-$exclusion4 = "*OU=School Board,OU=Staff,OU=User Accounts,DC=rqs,DC=c2"
+$exclusion1 = "*OU=Genetec All-In-Ones,OU=Technology,OU=Staff,OU=User Accounts,DC=foo,DC=bar"
+$exclusion2 = "*OU=Google Plus,OU=Technology,OU=Staff,OU=User Accounts,DC=foo,DC=bar"
+$exclusion3 = "*OU=FIM,OU=Staff,OU=User Accounts,DC=foo,DC=bar"
+$exclusion4 = "*OU=School Board,OU=Staff,OU=User Accounts,DC=foo,DC=bar"
 
 #AD Properties to Pull into CSV
 $ADPropSelect = @("SamAccountName","DisplayName","Department","DistinguishedName","CanonicalName","Title","PasswordLastSet","Enabled","extensionAttribute11","LastLogonDate","logonCount","mail")
