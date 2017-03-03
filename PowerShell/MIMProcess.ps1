@@ -1,7 +1,6 @@
 ## MIM Process Script
 ## 02/11/2016
 ## Jordan Stoner
-## jordan.stoner@raytownschools.org
 ## jordanstoner@gmail.com
 #
 #
